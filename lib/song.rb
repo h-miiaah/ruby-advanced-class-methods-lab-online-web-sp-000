@@ -29,7 +29,7 @@ class Song
   end
 
   def self.find_by_name(song_name) # class finder method, finds a song from the song name.
-    result = self.all.detect{|song| song.name == song_name} # sets the result variable equal to the song searched for.
+    result = self.all.find{|song| song.name == song_name} # sets the result variable equal to the song searched for.
     result # returns the found song.
   end
 
